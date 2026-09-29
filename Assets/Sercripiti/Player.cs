@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public float speed = 5f;
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded )
         {
-            rb.AddForce(new Vector2(0f, 8f), ForceMode2D.Impulse);// 
+            rb.AddForce(new Vector2(0f, 7f), ForceMode2D.Impulse);// 
         }
 
        
@@ -36,6 +36,10 @@ public class Player : MonoBehaviour
             isGrounded =true;
         }
 
+        if (collision .gameObject .CompareTag ("Dano"))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
      void OnCollisionExit2D(Collision2D collision)
     {
