@@ -31,12 +31,12 @@ public class Player : MonoBehaviour
 
      void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision .gameObject .CompareTag ("Ground"))
+        if(collision.gameObject .CompareTag ("Ground"))
         {
             isGrounded =true;
         }
 
-        if (collision .gameObject .CompareTag ("Dano"))
+        if (collision.gameObject .CompareTag ("Dano"))
         {
             SceneManager.LoadScene(0);
         }
