@@ -14,6 +14,8 @@ public class Player1 : MonoBehaviour
 
     private bool isGrounded = false;
 
+    public MenuScene menu;
+
     void Start()
     {
         rb =GetComponent<Rigidbody2D>();
@@ -99,7 +101,7 @@ public class Player1 : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Dano"))
         {
-            SceneManager.LoadScene(0);
+            menu.MostrarGameOver();
         }
     }
 }
