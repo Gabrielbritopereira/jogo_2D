@@ -59,7 +59,9 @@ public class MenuScene : MonoBehaviour
     public void Reiniciar()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale =1f;
+
     }
-    
+
 
 }
