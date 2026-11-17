@@ -3125,9 +3125,10 @@ GameObject:
   - component: {fileID: 581140107}
   - component: {fileID: 581140109}
   - component: {fileID: 581140108}
+  - component: {fileID: 581140110}
   m_Layer: 0
-  m_Name: "ch\xE3o (26)"
-  m_TagString: Dano
+  m_Name: Fase2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3252,6 +3253,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &581140110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581140106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8231081bd3938c4c9d15f18035df3bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PasaDeFase
+  nomeDaProximaFase: Fase2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -6785,6 +6799,7 @@ GameObject:
   - component: {fileID: 1307222699}
   - component: {fileID: 1307222700}
   - component: {fileID: 1307222701}
+  - component: {fileID: 1307222702}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6860,7 +6875,7 @@ Transform:
   m_GameObject: {fileID: 1307222695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.39, y: -3.19, z: 0}
+  m_LocalPosition: {x: 87, y: 25.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6961,6 +6976,18 @@ MonoBehaviour:
   duracaoDash: 0.3
   tempoRecarga: 1
   menu: {fileID: 155719219}
+--- !u!114 &1307222702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307222695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7973733ec83784146bcca238b90ce484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!1 &1309873448
 GameObject:
   m_ObjectHideFlags: 0
@@ -8105,9 +8132,10 @@ GameObject:
   - component: {fileID: 1451809806}
   - component: {fileID: 1451809808}
   - component: {fileID: 1451809807}
+  - component: {fileID: 1451809809}
   m_Layer: 0
-  m_Name: "ch\xE3o (55)"
-  m_TagString: Dano
+  m_Name: Fase1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8232,6 +8260,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1451809809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451809805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8231081bd3938c4c9d15f18035df3bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PasaDeFase
+  nomeDaProximaFase: Fasi2
 --- !u!4 &1467688800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9090489516737359277, guid: eaa80d2a1bd666e4a8ca15a5ff38c1c7, type: 3}
@@ -10256,9 +10297,10 @@ GameObject:
   - component: {fileID: 1749930287}
   - component: {fileID: 1749930289}
   - component: {fileID: 1749930288}
+  - component: {fileID: 1749930290}
   m_Layer: 0
-  m_Name: "ch\xE3o (44)"
-  m_TagString: Dano
+  m_Name: Portal
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10383,6 +10425,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1749930290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749930286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8231081bd3938c4c9d15f18035df3bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PasaDeFase
+  nomeDaProximaFase: Fase2
 --- !u!1 &1751534352
 GameObject:
   m_ObjectHideFlags: 0
@@ -11010,7 +11065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1933601270
 RectTransform:
   m_ObjectHideFlags: 0
