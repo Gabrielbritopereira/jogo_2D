@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class NewMonoBehaviourScript : MonoBehaviour
+public class pasadefase : MonoBehaviour
 {
     private Rigidbody2D rb;
     void Start()
