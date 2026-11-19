@@ -2846,6 +2846,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2965,12 +2966,28 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.36, y: 1.01, z: -10}
+  m_LocalPosition: {x: 231.2, y: 36.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1307222697}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33c16538ed21e44a8bf880e5296ea5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainCamera
+  alvo: {fileID: 1307222697}
+  distancia: {x: 0, y: 0, z: -10}
+  movimentoSuave: 1
+  velocidada: 5
 --- !u!1 &526293765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3265,7 +3282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8231081bd3938c4c9d15f18035df3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasaDeFase
-  nomeDaProximaFase: Fase2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -6875,11 +6891,10 @@ Transform:
   m_GameObject: {fileID: 1307222695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87, y: 25.7, z: 0}
+  m_LocalPosition: {x: -10.23, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 519420032}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1307222699
@@ -8272,7 +8287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8231081bd3938c4c9d15f18035df3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasaDeFase
-  nomeDaProximaFase: Fasi2
 --- !u!4 &1467688800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9090489516737359277, guid: eaa80d2a1bd666e4a8ca15a5ff38c1c7, type: 3}
@@ -10437,7 +10451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8231081bd3938c4c9d15f18035df3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasaDeFase
-  nomeDaProximaFase: Fase2
 --- !u!1 &1751534352
 GameObject:
   m_ObjectHideFlags: 0
@@ -12386,6 +12399,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 619394802}
+  - {fileID: 519420032}
   - {fileID: 1307222697}
   - {fileID: 237020962}
   - {fileID: 6214398344247838450}
