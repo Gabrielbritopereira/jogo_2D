@@ -4,9 +4,11 @@ public class MenuScene : MonoBehaviour
 {
     public GameObject painelPause;
     public GameObject panelGameOver;
+    public GameObject painelVitoria;
 
     bool pausardo = false;
     bool jogoAcabou = false;
+    bool ganhou = false;
 
 
 
@@ -15,6 +17,7 @@ public class MenuScene : MonoBehaviour
     {
         painelPause.SetActive(false);
         panelGameOver.SetActive(false);
+        painelVitoria .SetActive(false);
     }
 
     // Update is called once per frame
@@ -68,5 +71,11 @@ public class MenuScene : MonoBehaviour
         Time.timeScale=1f;
         SceneManager.LoadScene(0);
 
+    }
+    void Vitoria()
+    {
+        ganhou = true;
+        Time.timeScale=0f;
+        painelVitoria.SetActive(true);
     }
 }
